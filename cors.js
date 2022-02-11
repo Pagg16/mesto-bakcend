@@ -1,5 +1,5 @@
 const allowedCors = [
-  'https:PashokiFront.nomoredomains.work',
+  'http://pashokifront.nomoredomains.work/sign-in',
   'localhost:3000',
 ];
 
