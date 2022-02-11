@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "lint": "npx eslint .",
-    "deploy": "mesto@84.252.128.250:/home/mesto/react-mesto-api-full/frontend"
+    "lint": "npx eslint ."
   },
   "author": "Pavel Cool",
   "license": "ISC",
