@@ -1,6 +1,5 @@
 const allowedCors = [
-  'https://praktikum.tk',
-  'http://praktikum.tk',
+  'https:PashokiFront.nomoredomains.work',
   'localhost:3000',
 ];
 
