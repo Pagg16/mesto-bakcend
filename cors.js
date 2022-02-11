@@ -1,6 +1,8 @@
 const allowedCors = [
   'http://pashokifront.nomoredomains.work',
-  'localhost:3000',
+  'https://pashokifront.nomoredomains.work',
+  'http://localhost:3000',
+  'https://localhost:3000',
 ];
 
 module.exports = function cors(req, res, next) {
@@ -11,6 +13,7 @@ module.exports = function cors(req, res, next) {
   const { method } = req;
   const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
   const requestHeaders = req.headers['access-control-request-headers'];
+
   if (method === 'OPTIONS') {
     res.header('Access-Control-Allow-Methods', DEFAULT_ALLOWED_METHODS);
     res.header('Access-Control-Allow-Headers', requestHeaders);
