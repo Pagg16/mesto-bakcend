@@ -1,6 +1,6 @@
 const allowedCors = [
-  'http://Pashokifront.nomoredomains.work',
-  'https://Pashokifront.nomoredomains.work',
+  'http://PashokiFront.nomoredomains.work',
+  'https://PashokiFront.nomoredomains.work',
   'http://localhost:3000',
   'https://localhost:3000',
 ];

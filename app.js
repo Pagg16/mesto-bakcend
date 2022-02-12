@@ -14,11 +14,11 @@ const { PORT = 3000, DB_URL = 'mongodb+srv://Pagg16:Pagg16@cluster0.edkvs.mongod
 
 const app = express();
 
-app.use(cors);
-
 app.use(express.json());
 
 app.use(requestLogger);
+
+app.use(cors);
 
 app.use(singinSingup);
 
