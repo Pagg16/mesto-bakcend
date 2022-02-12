@@ -3,6 +3,8 @@ const allowedCors = [
   'https://pashokifront.nomoredomains.work/',
   'http://localhost:3000',
   'https://localhost:3000',
+  'http://localhost:3000',
+  'https://localhost:3000',
 ];
 
 module.exports = function cors(req, res, next) {
