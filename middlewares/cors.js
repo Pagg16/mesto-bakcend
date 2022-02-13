@@ -1,12 +1,6 @@
 const allowedCors = [
-  'http://PashokiFront.nomoredomains.work/',
-  'https://PashokiFront.nomoredomains.work/',
-  'http://pashokifront.nomoredomains.work/',
-  'https://pashokifront.nomoredomains.work/',
   'http://pashokifront.nomoredomains.work',
   'https://pashokifront.nomoredomains.work',
-  'http://PashokiFront.nomoredomains.work',
-  'https://PashokiFront.nomoredomains.work',
   'http://localhost:3000',
   'https://localhost:3000',
 ];
@@ -15,10 +9,8 @@ module.exports = function cors(req, res, next) {
   const { origin } = req.headers;
   console.log(origin);
   if (allowedCors.includes(origin)) {
-    res.send('корсы раотают');
     res.header('Access-Control-Allow-Origin', origin);
     console.log('1');
-    return res.end();
   }
   const { method } = req;
   const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
