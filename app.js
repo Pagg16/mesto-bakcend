@@ -7,7 +7,7 @@ const singinSingup = require('./routes/singinSingup');
 const auth = require('./middlewares/auth');
 const errorHandler = require('./middlewares/error-handler');
 const NotFound = require('./errors/not-found');
-const cors = require('./cors');
+const cors = require('./middlewares/cors');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const { PORT = 3000, DB_URL = 'mongodb+srv://Pagg16:Pagg16@cluster0.edkvs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority' } = process.env;
