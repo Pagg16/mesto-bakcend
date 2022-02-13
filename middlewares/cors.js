@@ -12,8 +12,8 @@ const allowedCors = [
 ];
 
 module.exports = function cors(req, res, next) {
-  console.log('1');
   const { origin } = req.headers;
+  console.log(origin);
   if (allowedCors.includes(origin)) {
     res.send('корсы раотают');
     res.header('Access-Control-Allow-Origin', origin);
